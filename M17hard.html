@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Stylish Div</title>
+
+  <style>
+    /* Page styling */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      font-family: Arial, sans-serif;
+      color: #302044;
+      background: linear-gradient(135deg, #f8d7e8, #d9d5ff, #c8eff0);
+    }
+
+    /* The div */
+    .fancy-box {
+      width: min(520px, 100%);
+      padding: 38px;
+      text-align: center;
+
+      /* Rounded corners */
+      border-radius: 28px;
+
+      /* Background gradient */
+      background: linear-gradient(145deg, #fffaff, #f0eaff);
+
+      /* Unique border image (embedded SVG, so no extra file is needed) */
+      border: 14px solid transparent;
+      border-image-source: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Crect x='5' y='5' width='80' height='80' rx='18' fill='none' stroke='%239b72cf' stroke-width='9' stroke-dasharray='12 6'/%3E%3C/svg%3E");
+      border-image-slice: 25%;
+      border-image-repeat: round;
+
+      /* Subtle 3D shadow */
+      box-shadow:
+        0 18px 35px rgba(76, 48, 110, 0.18),
+        0 5px 12px rgba(76, 48, 110, 0.10);
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #7046a5;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #594b68;
+    }
+
+    .small-note {
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      color: #88789a;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fancy-box">
+    <h1>Hello, HTML &amp; CSS!</h1>
+    <p>
+      This is a div with rounded corners, a decorative border image,
+      a soft gradient background, and a subtle box shadow.
+    </p>
+    <p class="small-note">I havnt learned JavaScript properly yet :/</p>
+  </div>
+</body>
+</html>
